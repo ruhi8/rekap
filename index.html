@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Shift</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <p class="fs-1 fw-bold text-center">REPORT SHIFT KBS</p>
+    <div class="container mb-4">
+      <form name="report" id="form">
+        <!--DC room temperatur-->
+        <div class="row row-cols-1">
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              Room Temeperatur DC 6
+            </p>
+            <div class="row row-cols-2">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Server 1 Room Temeperatur</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="room_temp"
+                  name="room_temp"
+                  placeholder="Server 1 Room Temeperatur"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Server 1 Room Humidity</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="room_hum"
+                  name="room_hum"
+                  placeholder="Server 1 Room Humidity"
+                  required
+                />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--End DC room temperatur-->
+        <!--PAC-->
+        <div class="row row-cols-3">
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PAC 1
+            </p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PAC 1 temperatur</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pac1_temp"
+                name="pac1_temp"
+                placeholder="PAC 1 temperatur"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PAC 1 Humidity</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pac1_hum"
+                name="pac1_hum"
+                placeholder="PAC 1 Humidity"
+                required
+              />
+            </div>
+            <div class="mb-4">
+            <select class="form-select form-select-sm" aria-label="Small select example" id="pac_status" name="pac_status">
+              <option selected>Status PAC 1</option>
+              <option value="on">On</option>
+              <option value="off">Off</option>
+            </select>
+          </div>
+
+          </div>
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PAC 2
+            </p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PAC 2 temperatur</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pac2_temp"
+                name="pac2_temp"
+                placeholder="PAC 2 temperatur"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PAC 2 Humidity</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pac2_hum"
+                name="pac2_hum"
+                placeholder="PAC 2 Humidity"
+                required
+              />
+            </div>
+            <div class="mb-4">
+            <select class="form-select form-select-sm" aria-label="Small select example" id="pac2_status" name="pac2_status">
+              <option selected>Status PAC 2</option>
+              <option value="on">On</option>
+              <option value="off">Off</option>
+            </select>
+          </div>
+
+          </div>
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PAC 3
+            </p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PAC 3 temperatur</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pac3_temp"
+                name="pac3_temp"
+                placeholder="PAC 3 temperatur"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PAC 3 Humidity</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pac3_hum"
+                name="pac3_hum"
+                placeholder="PAC 3 Humidity"
+                required
+              />
+            </div>
+            <div class="mb-4">
+            <select class="form-select form-select-sm" aria-label="Small select example" id="pac3_status" name="pac3_status">
+              <option selected>Status PAC 3</option>
+              <option value="on">On</option>
+              <option value="off">Off</option>
+            </select>
+          </div>
+
+          </div>
+        </div>
+        <!--PAC-->
+
+        <!--DC26-->
+        <div class="row row-cols-1">
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              Room Temeperatur DC 26
+            </p>
+            <div class="row row-cols-2">
+              <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >DC 26 Room Temeperatur</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dc26_temp"
+                  name="dc26_temp"
+                  placeholder="DC 26 Room Temeperatur"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >DC 26 Room Humidity</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dc26_hum"
+                  name="dc26_hum"
+                  placeholder="DC 26 Room Humidity"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <select class="form-select form-select-sm" aria-label="Small select example" id="ac1_status" name="ac1_status">
+                  <option selected>Status AC 1</option>
+                  <option value="on">On</option>
+                  <option value="off">Off</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <select class="form-select form-select-sm" aria-label="Small select example" id="ac2_status" name="ac2_status">
+                  <option selected>Status AC 2</option>
+                  <option value="on">On</option>
+                  <option value="off">Off</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--end DC 26-->
+        <div class="row row-cols-2">
+          <!--pertama-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PDU 1A
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pdu1a_vag"
+                name="pdu1a_vag"
+                placeholder="PDU 1A-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="pdu1a_iavg"
+                name="pdu1a_iavg"
+                placeholder="PDU 1A-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ptot"
+                id="pdu1a_ptot"
+                placeholder="PDU 1A-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_edel"
+                id="pdu1a_edel"
+                placeholder="PDU 1A-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ia"
+                id="pdu1a_ia"
+                placeholder="PDU 1A-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ib"
+                id="pdu1a_ib"
+                placeholder="PDU 1A-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1A-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1a_ic"
+                id="pdu1a_ic"
+                placeholder="PDU 1A-ic"
+                required
+              />
+            </div>
+          </div>
+          <!--akhir pertama-->
+          <!--kedua-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PDU 2A
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_vag"
+                id="pdu2a_vag"
+                placeholder="PDU 2A-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_iavg"
+                id="pdu2a_iavg"
+                placeholder="PDU 2A-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ptot"
+                id="pdu2a_ptot"
+                placeholder="PDU 2A-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_edel"
+                id="pdu2a_edel"
+                placeholder="PDU 2A-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ia"
+                id="pdu2a_ia"
+                placeholder="PDU 2A-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ib"
+                id="pdu2a_ib"
+                placeholder="PDU 2A-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2A-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2a_ic"
+                id="pdu2a_ic"
+                placeholder="PDU 2A-ic"
+                required
+              />
+            </div>
+          </div>
+          <!--akhir kedua-->
+          <!--ketiga-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PDU 1B
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_vag"
+                id="pdu1b_vag"
+                placeholder="PDU 1B-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_iavg"
+                id="pdu1b_iavg"
+                placeholder="PDU 1B-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ptot"
+                id="pdu1b_ptot"
+                placeholder="PDU 1B-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_edel"
+                id="pdu1b_edel"
+                placeholder="PDU 1B-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ia"
+                id="pdu1b_ia"
+                placeholder="PDU 1B-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ib"
+                id="pdu1b_ib"
+                placeholder="PDU 1B-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 1B-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu1b_ic"
+                id="pdu1b_ic"
+                placeholder="PDU 1B-ic"
+                required
+              />
+            </div>
+          </div>
+          <!--akhir ketiga-->
+          <!--ke empat-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              PDU 2B
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_vag"
+                id="pdu2b_vag"
+                placeholder="PDU 2B-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_iavg"
+                id="pdu2b_iavg"
+                placeholder="PDU 2B-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ptot"
+                id="pdu2b_ptot"
+                placeholder="PDU 2B-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_edel"
+                id="pdu2b_edel"
+                placeholder="PDU 2B-E del"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-ia</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ia"
+                id="pdu2b_ia"
+                placeholder="PDU 2B-ia"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-ib</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ib"
+                id="pdu2b_ib"
+                placeholder="PDU 2B-ib"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >PDU 2B-ic</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="pdu2b_ic"
+                id="pdu2b_ic"
+                placeholder="PDU 2B-ic"
+                required
+              />
+            </div>
+          </div>
+          <!--Akhir ke empat-->
+        </div>
+        <!--MSB-->
+        <div class="row row-cols-3 mb-4">
+          <!--pertama-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              MSB A
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_vag"
+                id="msba_vag"
+                placeholder="MSB A-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_iavg"
+                id="msba_iavg"
+                placeholder="MSB A-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_ptot"
+                id="msba_ptot"
+                placeholder="MSB A-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB A-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msba_edel"
+                id="msba_edel"
+                placeholder="MSB A-E del"
+                required
+              />
+            </div>
+          </div>
+          <!--akhir pertama-->
+          <!--kedua-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              MSB B
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_vag"
+                id="msbb_vag"
+                placeholder="MSB B-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_iavg"
+                id="msbb_iavg"
+                placeholder="MSB B-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_ptot"
+                id="msbb_ptot"
+                placeholder="MSB B-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB B-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbb_edel"
+                id="msbb_edel"
+                placeholder="MSB C-E del"
+                required
+              />
+            </div>
+          </div>
+          <!--akhir kedua-->
+          <!--ketiga-->
+          <div class="col">
+            <p
+              class="text-center fw-bold text-danger border-bottom border-danger bg-success p-2 text-dark bg-opacity-50"
+            >
+              MSB C
+            </p>
+            <!--form-->
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-Vag</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_vag"
+                id="msbc_vag"
+                placeholder="MSB C-Vag"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-Iavg</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_iavg"
+                id="msbc_iavg"
+                placeholder="MSB C-Iavg"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-P tot</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_ptot"
+                id="msbc_ptot"
+                placeholder="MSB C-P tot"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >MSB C-E del</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="msbc_edel"
+                id="msbc_edel"
+                placeholder="MSB C-E del"
+                required
+              />
+            </div>
+          </div>
+          <!--akhir ketiga-->
+        </div>
+        <div class="col">
+          <div class="d-grid gap-2 col-6 mx-auto mb-8">
+            <button
+              class="btn btn-primary"
+              id="submit"
+              type="submit"
+              style="padding-top: 10px"
+            >
+              Kirim
+            </button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbycfmbrCOWGnXFGyNDpwRwcp015kSRS0hyElN7iDWGXXVKVoNF6t568LbWhcCtjJRZXtA/exec';
+      const form = document.forms['report'];
+      const btnKirim = document.querySelector('.btn');
+      const tombolKirim = document.querySelector('#submit');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        tombolKirim.disabled = true;
+        tombolKirim.innerHTML = 'Loading...';
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            tombolKirim.disabled = false;
+            tombolKirim.innerHTML = 'Kirim';
+            form.reset();  // Reset form fields
+            alert('Laporan Berhasil Dikirim!');
+          })
+          .catch(error => {
+            console.error('Error!', error.message);
+            tombolKirim.disabled = false;
+            tombolKirim.innerHTML = 'Kirim';
+            alert('Laporan Gagal Dikirim, coba lagi.');
+          });
+      });
+    </script>
+    
+  </body>
+</html>
